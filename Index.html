@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>جنة الياسمين - إدارة الديون</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+<div id="login" class="login">
+  <h1>جنة الياسمين</h1>
+  <p>نظام إدارة الديون - سجّل الدخول بحساب جوجل المصرّح له</p>
+  <div id="gbtn"></div>
+  <p id="lerr" class="err"></p>
+</div>
+<div id="app" hidden>
+  <nav id="nav">
+    <h2>جنة الياسمين</h2>
+    <button data-v="dash">لوحة التحكم</button>
+    <button data-v="C">ديون العملاء</button>
+    <button data-v="S">ديون الموردين</button>
+    <button data-v="tx">سجل الحركات</button>
+    <button data-v="rep">التقارير</button>
+    <button data-v="set">الإعدادات</button>
+  </nav>
+  <main id="main"></main>
+</div>
+<dialog id="dlg"></dialog>
+<div id="toast"></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
